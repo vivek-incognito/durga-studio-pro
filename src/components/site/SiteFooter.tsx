@@ -39,7 +39,6 @@ export function SiteFooter() {
       <div className="border-t border-navy-foreground/10">
         <div className="container-page flex flex-col items-center justify-between gap-2 py-5 text-xs text-navy-muted sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Durga Studio. All rights reserved.</p>
-          <Link to="/auth" className="hover:text-navy-foreground">Staff sign in</Link>
         </div>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 # Durga Studio roadmap
-- [ ] Base site: home, shop, product pages, cart, checkout, branches (blue/turquoise/gold)
+- [ ] Checkout page with branch selection + saved orders (create_order ready in DB, page not built)
 - [ ] Gallery page with categories, masonry, lightbox, sample vs studio labels
 - [ ] Order tracking (Order ID + mobile)
 - [ ] Private admin dashboard (overview, orders, products, gallery, branches, customers)
@@ -7,3 +7,5 @@
 - [ ] Admin email durgastudiorcl@gmail.com gets admin access
 - [ ] Both WhatsApp numbers used for orders
 - [ ] Main branch location from map pin (Rentachintala)
+- [x] Gallery page, order tracking page, product uploads, cart, database + security
+- [ ] Admin login page and dashboard pages (database rules ready, screens not built)

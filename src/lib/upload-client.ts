@@ -27,8 +27,8 @@ export async function uploadOrderFile(
   const { path, token } = await createOrderUploadUrl({
     data: { kind, name: file.name, type: file.type, size: file.size },
   });
-  const base = (import.meta.env.VITE_SUPABASE_URL as string).replace(/\/+$/, "");
-  const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string;
+  const base = (import.meta.env["VITE_SUPABASE_URL"] as string).replace(/\/+$/, "");
+  const key = import.meta.env["VITE_SUPABASE_PUBLISHABLE_KEY"] as string;
   const url = `${base}/storage/v1/object/upload/sign/order-uploads/${path}?token=${encodeURIComponent(token)}`;
 
   await new Promise<void>((resolve, reject) => {

@@ -51,7 +51,7 @@ export const listGallery = createServerFn({ method: "GET" }).handler(async () =>
   const signed = new Map<string, string>();
   if (paths.length) {
     const { data: urls } = await sb.storage.from("gallery").createSignedUrls(paths, 60 * 60 * 24 * 7);
-    const publicBase = String(import.meta.env.VITE_SUPABASE_URL ?? "");
+    const publicBase = String(import.meta.env["VITE_SUPABASE_URL"] ?? "");
     for (const u of urls ?? []) {
       if (u.path && u.signedUrl) {
         // Signed URLs are built from the server URL; rewrite to the browser-facing URL.

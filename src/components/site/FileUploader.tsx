@@ -7,7 +7,7 @@ import { formatBytes, type UploadKind } from "@/lib/format";
 import { getUploadRule, validateUpload } from "@/lib/upload-rules";
 import { getPreview, setPreview, uploadOrderFile, type UploadedFile } from "@/lib/upload-client";
 
-type Pending = { id: string; name: string; size: number; progress: number; error?: string; replaces?: string };
+type Pending = { id: string; name: string; size: number; progress: number; error?: string | undefined; replaces?: string | undefined };
 
 export function FileUploader({
   kind,
